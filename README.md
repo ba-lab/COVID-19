@@ -1,2 +1,2 @@
-# Protein structure prediction of COVID-19 related proteins guided by inter-residue distance prediction
-Protein structure prediction for the 10 COVID-19 related proteins released by CASP (Commons)
+# Predicting 3D models of COVID-19 related proteins guided by predicted inter-residue distances
+(For the 10 COVID-19 related proteins released by CASP Commons)
