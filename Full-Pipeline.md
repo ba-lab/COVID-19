@@ -60,7 +60,11 @@ print(f"Total constaints: {len(distances)}")
 fcst = open('constraints.cst', 'w')
 for pair, d in distances.items():
     a, b = pair.split()
-    atom1, atom2 = 'CB'
+    atom1 = atom2 = 'CB'
+    if sequence[int(a)-1] == 'G':
+        atom1 = 'CA'
+    if sequence[int(b)-1] == 'G':
+        atom2 = 'CA'
     dev = 0.273 * d - 0.455 # +- 4A deviation
     dmin = d - dev / 2.0
     dmax = d + dev / 2.0
