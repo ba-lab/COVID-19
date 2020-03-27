@@ -1,5 +1,6 @@
 # Full pipeline - Sequence to Models (example)
-Using the CASP13 target T0957s2-D1 as an example.
+* Using the CASP13 target T0957s2-D1 as an example.
+* Files are available [here](../full-pipeline-example/).
 <hr>  
 
 ### Step1. Make alignments
@@ -103,7 +104,10 @@ fcst.close()
 -nstruct 10 -out:pdb -abinitio:relax -out:overwrite
 ```
 
-### Step8. Evaluate predicted structures using TM-score and RMSD (if native is present)
+### Step8. Check that the distances in the predicted models match that of the input distance maps
+Full analysis available [here](../full-pipeline-example/T0957s2_Predicted_distmap_vs_Model's_distmap.ipynb)
+
+### Step9. Evaluate predicted structures using TM-score and RMSD (if native is present)
 * Submit the native structure and the models with minimum score (in the `scores.fsc` file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
 * In this case:
   * TM-score of best model without CST ~ 0.38
