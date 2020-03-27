@@ -78,7 +78,7 @@ fcst.close()
 
 ### Step5. Obtain Rosetta fragment files
 * Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat000_03_05.200_v1_3` and `aat000_09_05.200_v1_3`
-* Otherwise, we will need to get the 'make_fragments.pl' (old) or Fragment picker to work
+* Otherwise, we will need to get the `make_fragments.pl` (old) or Fragment picker to work
 
 ### Step6. Run Rosetta with restraints
 ```console
@@ -104,7 +104,7 @@ fcst.close()
 ```
 
 ### Step8. Evaluate predicted structures using TM-score and RMSD (if native is present)
-* Submit the native structure and the models with minimum score (in the scores.sfc file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
+* Submit the native structure and the models with minimum score (in the `scores.fsc` file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
 * In this case:
   * TM-score of best model without CST ~ 0.38
   * TM-score of best model with CST ~ 0.6
