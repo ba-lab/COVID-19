@@ -3,7 +3,7 @@ Using the CASP13 target T0957s2-D1 as an example.
 <hr>  
 
 ### Step1. Make alignments
-```bash
+```console
 /ssdA/common-tools/DeepMSA/hhsuite2/scripts/build_MSA_e0.001.py ./T0957s2-D1.fasta \
 -outdir=./T0957s2-D1/ \
 -hhblitsdb=/ssdA/common-tools/uniclust30_2018_08_hhsuite/uniclust30_2018_08 \
@@ -13,7 +13,7 @@ Using the CASP13 target T0957s2-D1 as an example.
 ```
 Repeat for various e-value thresholds
 ### Step2. Predict distances and contacts
-```bash
+```console
 #Input: T0957s2.aln
 #Outputs: T0957s2.realdist.distmap.npy and T0957s2.rr
 python3 /home/badri/casp14/35-PrayogRealDistance/src/predict-distance.py \
@@ -23,7 +23,7 @@ python3 /home/badri/casp14/35-PrayogRealDistance/src/predict-distance.py \
 ```
 Repeat for various e-value thresholds
 ### Step3. Evaluate contacts
-```bash
+```console
 /home/badri/PDNET/v3-ICML/scripts/coneva.pl \
 -pdb ~/PDNET/v3-ICML/data/casp13/chains/T0957s2.pdb \
 -rr ./e0.001/T0957s2.rr
