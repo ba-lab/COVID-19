@@ -12,6 +12,7 @@ Using the CASP13 target T0957s2-D1 as an example.
 :/ssdA/common-tools/metaclust-2018-Jun-22/metaclust_nr.fasta
 ```
 Repeat for various e-value thresholds
+
 ### Step2. Predict distances and contacts
 ```console
 #Input: T0957s2.aln
@@ -22,12 +23,14 @@ python3 /home/badri/casp14/35-PrayogRealDistance/src/predict-distance.py \
 -o e0.001
 ```
 Repeat for various e-value thresholds
+
 ### Step3. Evaluate contacts (if native is present)
 ```console
 /home/badri/PDNET/v3-ICML/scripts/coneva.pl \
 -pdb ~/PDNET/v3-ICML/data/casp13/chains/T0957s2.pdb \
 -rr ./e0.001/T0957s2.rr
 ```
+
 ### Step4. Visualize distance map and Obtain Rosetta constraints file
 ```python
 import numpy as np
@@ -72,19 +75,11 @@ for pair, d in distances.items():
     fcst.write(line + '\n')
 fcst.close()
 ```
+
 ### Step5. Obtain Rosetta fragment files
 Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat000_03_05.200_v1_3` and `aat000_09_05.200_v1_3`.
 
-### Step6. Run Rosetta without any restraints
-```console
-/ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/source/bin/AbinitioRelax.static.linuxgccrelease \
--database /ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/database/ \
--in:file:fasta ../e0.001/T0957s2.fasta \
--in:file:frag3 ./aat000_03_05.200_v1_3 \
--in:file:frag9 ./aat000_09_05.200_v1_3 \
--nstruct 10 -out:pdb -abinitio:relax -out:overwrite
-```
-### Step7. Run Rosetta with restraints
+### Step6. Run Rosetta with restraints
 ```console
 /ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/source/bin/AbinitioRelax.static.linuxgccrelease \
 -database /ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/database/ \
@@ -96,6 +91,17 @@ Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat00
 -cst_fa_file ../constraints.cst \
 -abinitio:relax -out:overwrite
 ```
+
+### Step7. Run Rosetta without any restraints (for comparison)
+```console
+/ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/source/bin/AbinitioRelax.static.linuxgccrelease \
+-database /ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/database/ \
+-in:file:fasta ../e0.001/T0957s2.fasta \
+-in:file:frag3 ./aat000_03_05.200_v1_3 \
+-in:file:frag9 ./aat000_09_05.200_v1_3 \
+-nstruct 10 -out:pdb -abinitio:relax -out:overwrite
+```
+
 ### Step8. Evaluate predicted structures using TM-score and RMSD (if native is present)
 * Submit the native structure and the models with minimum score (in the scores.sfc file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
 * In this case:
