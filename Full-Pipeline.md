@@ -73,7 +73,7 @@ for pair, d in distances.items():
 fcst.close()
 ```
 ### Step5. Obtain Rosetta fragment files
-Submit fasta file at http://old.robetta.org/fragmentqueue.jsp.
+Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat000_03_05.200_v1_3` and `aat000_09_05.200_v1_3`.
 
 ### Step6. Run Rosetta without any restraints
 ```console
