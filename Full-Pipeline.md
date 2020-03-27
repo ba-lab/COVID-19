@@ -22,7 +22,7 @@ python3 /home/badri/casp14/35-PrayogRealDistance/src/predict-distance.py \
 -o e0.001
 ```
 Repeat for various e-value thresholds
-### Step3. Evaluate contacts
+### Step3. Evaluate contacts (if native is present)
 ```console
 /home/badri/PDNET/v3-ICML/scripts/coneva.pl \
 -pdb ~/PDNET/v3-ICML/data/casp13/chains/T0957s2.pdb \
@@ -96,7 +96,7 @@ Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat00
 -cst_fa_file ../constraints.cst \
 -abinitio:relax -out:overwrite
 ```
-### Step8. Evaluate predicted structures using TM-score and RMSD
+### Step8. Evaluate predicted structures using TM-score and RMSD (if native is present)
 Submit the native structure and the models with minimum score (in the scores.sfc file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
 
 
