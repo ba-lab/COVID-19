@@ -1,0 +1,44 @@
+##############################################################################################################
+#
+# Rosetta crash log. 
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2019.35+release.767c1ea
+[COMMIT_DATE]: 2019-08-30T12:04:30.133343
+[APPLICATION]: /ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/source/bin/AbinitioRelax.static.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-16)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+ -in:path:database=/ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/database/ -in:file:frag3=./aat000_03_05.200_v1_3 -in:file:frag9=./aat000_09_05.200_v1_3 -in:file:fasta=../e0.001/T0957s2.fasta -out:overwrite -out:nstruct=10 -out:pdb -abinitio:relax
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+[0x39a310f]
+[0x5e398b3]
+[0x5edb6a6]
+[0x3a51a5a]
+[0x1234da6]
+[0x123d9fc]
+[0x1246534]
+[0x411f1e]
+[0x63d1d54]
+[0x62fdad]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/fragment/FragmentIO.cc
+[LINE]: 233
+[START_MESSAGE]
+[ ERROR ] UtilityExitException
+ERROR: ERROR: FragmentIO: could not open file ./aat000_09_05.200_v1_3
+
+
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+

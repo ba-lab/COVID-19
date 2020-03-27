@@ -1,0 +1,45 @@
+##############################################################################################################
+#
+# Rosetta crash log. 
+#
+
+[START_CRASH_REPORT]
+[ROSETTA_VERSION]: 2019.35+release.767c1ea
+[COMMIT_DATE]: 2019-08-30T12:04:30.133343
+[APPLICATION]: /ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/source/bin/AbinitioRelax.static.linuxgccrelease
+[MODE]: Release
+[EXTRAS]: default
+[OS]: GNU/Linux
+[COMPILER]: GCC version "4.8.5 20150623 (Red Hat 4.8.5-16)"
+[STDLIB]: libstdc++ version 20150623
+[START_OPTIONS]
+ -in:path:database=/ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/database/ -in:file:frag3=./aat000_03_05.200_v1_3 -in:file:frag9=./aat000_09_05.200_v1_3 -in:file:fasta=../e0.001/T0957s2.fasta -out:overwrite -out:nstruct=10 -out:pdb -constraints:cst_weight=0.5 -constraints:cst_fa_file=../constraints.cst -constraints:cst_fa_weight=0.5 -abinitio:relax
+
+[END_OPTIONS]
+
+[START_BACKTRACE]: RAW_LIBC
+[0x39a310f]
+[0x5e398b3]
+[0x5975308]
+[0x4309546]
+[0x4ccb18a]
+[0x4ceaedd]
+[0x4ceb430]
+[0x4ceb521]
+[0x4cf0248]
+[0x12441e8]
+[0x1246560]
+[0x411f1e]
+[0x63d1d54]
+[0x62fdad]
+
+[END_BACKTRACE]
+
+[FILE]: src/core/pose/util.cc
+[LINE]: 705
+[START_MESSAGE]
+Atom 'B 7' not found
+
+[END_MESSAGE]
+[END_CRASH_REPORT]
+
