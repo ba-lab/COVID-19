@@ -18,6 +18,7 @@ python3 /home/badri/casp14/35-PrayogRealDistance/src/predict-distance.py \
 -w ../35-PrayogRealDistance/job/dist.hdf5.val.hdf5 \
 -a ../38-DeepMSAforCASP13FM/1-e0.001/T0957s2.fasta/T0957s2.aln \
 -o e0.001
+Outputs: T0957s2.realdist.distmap.npy and T0957s2.rr
 ```
 Repeat for various e-value thresholds
 ### Step3. Evaluate contacts
