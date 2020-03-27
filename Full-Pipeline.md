@@ -3,6 +3,7 @@ Using the CASP13 target T0957s2-D1 as an example.
 <hr>  
 
 ### Step1. Make alignments
+Repeat by selecting various e-value thresholds
 ```bash
 /ssdA/common-tools/DeepMSA/hhsuite2/scripts/build_MSA_e0.01.py ./T0957s2-D1.fasta \
 -outdir=./T0957s2-D1/ \
