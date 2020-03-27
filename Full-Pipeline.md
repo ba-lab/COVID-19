@@ -68,3 +68,5 @@ for pair, d in distances.items():
     fcst.write(line + '\n')
 fcst.close()
 ```
+### Step5. Obtain Rosetta fragment files
+Submit fasta file at http://old.robetta.org/fragmentqueue.jsp.
