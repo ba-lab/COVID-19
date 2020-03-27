@@ -48,24 +48,14 @@ assert len(cb_map[:, 0, 0]) == len(sequence)
 
 #sns.heatmap(cb_map[:, :, 0], cmap='Spectral')
 
-# Average the predictions from both triangles
-P = np.zeros((len(sequence), len(sequence)))
-for j in range(0, len(sequence)):
-    for k in range(j, len(sequence)):
-        if abs(j - k) < MINSEPARATION:
-            continue
-        P[j, k] = (cb_map[k, j, 0] + cb_map[j, k, 0]) / 2.0
-
-#sns.heatmap(P, cmap='Spectral')
-
 distances = {}
 for j in range(0, len(sequence)):
     for k in range(j, len(sequence)):
-        if P[j, k] >= THRESHOLD:
+        if cb_map[j, k, 0] >= THRESHOLD:
             continue
         if abs(j - k) < MINSEPARATION:
             continue
-        distances[str(j+1) + ' ' + str(k+1)] = P[j, k]
+        distances[str(j+1) + ' ' + str(k+1)] = cb_map[j, k, 0]
 print(f"Total constaints: {len(distances)}")
 
 fcst = open('constraints.cst', 'w')
