@@ -96,5 +96,8 @@ Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat00
 -cst_fa_file ../constraints.cst \
 -abinitio:relax -out:overwrite
 ```
+### Step8. Evaluate predicted structures using TM-score and RMSD
+Submit the native structure and the models with minimum score (in the scores.sfc file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
+
 
 
