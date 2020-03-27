@@ -31,8 +31,6 @@ Repeat for various e-value thresholds
 ### Step4. Visualize distance map and Obtain Rosetta constraints file
 ```python
 import numpy as np
-#import seaborn as sns
-#import matplotlib.pyplot as plt
 
 sequence  = 'SNAMINVNSTAKDIEGLESYLANGYVEANSFNDPEDDALECLSNLLVKDSRGGLSFCKKILNSNNIDGVFIKGSALNFLLLSEQWSYAFEYLTSNADNITLAELEKALFYFYCAKNETDPYPVPEGLFKKLMKRYEELKNDPDAKFYHLHETYDDFSKAYPLNN'
 predicted_dmap = 'T0957s2.realdist.distmap.npy'
@@ -46,6 +44,7 @@ cb_map[ cb_map < 3.5 ] = 3.5
 print(cb_map.shape)
 assert len(cb_map[:, 0, 0]) == len(sequence)
 
+#import seaborn as sns
 #sns.heatmap(cb_map[:, :, 0], cmap='Spectral')
 
 distances = {}
