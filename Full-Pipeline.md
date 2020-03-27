@@ -26,13 +26,13 @@ Repeat for various e-value thresholds
 -pdb ~/PDNET/v3-ICML/data/casp13/chains/T0957s2.pdb \
 -rr ./e0.001/T0957s2.rr
 ```
-### Step4. Obtain Rosetta constraints file
+### Step4. Visualize distance map and Obtain Rosetta constraints file
 ```python
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-sequence  = 'MGYINVFAFPFTIYSLLLCRMNSRNYIAQVDVVNFNLT'
+sequence  = 'SNAMINVNSTAKDIEGLESYLANGYVEANSFNDPEDDALECLSNLLVKDSRGGLSFCKKILNSNNIDGVFIKGSALNFLLLSEQWSYAFEYLTSNADNITLAELEKALFYFYCAKNETDPYPVPEGLFKKLMKRYEELKNDPDAKFYHLHETYDDFSKAYPLNN'
 predicted_dmap = 'T0957s2.realdist.distmap.npy'
 THRESHOLD = 20
 CSTWEIGHT = 1.0
