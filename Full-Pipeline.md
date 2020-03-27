@@ -77,7 +77,8 @@ fcst.close()
 ```
 
 ### Step5. Obtain Rosetta fragment files
-Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat000_03_05.200_v1_3` and `aat000_09_05.200_v1_3`.
+* Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat000_03_05.200_v1_3` and `aat000_09_05.200_v1_3`
+* Otherwise, we will need to get the 'make_fragments.pl' (old) or Fragment picker to work
 
 ### Step6. Run Rosetta with restraints
 ```console
