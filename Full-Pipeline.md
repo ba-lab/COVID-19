@@ -97,7 +97,9 @@ Submit fasta file at http://old.robetta.org/fragmentqueue.jsp and collect `aat00
 -abinitio:relax -out:overwrite
 ```
 ### Step8. Evaluate predicted structures using TM-score and RMSD (if native is present)
-Submit the native structure and the models with minimum score (in the scores.sfc file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
-
+* Submit the native structure and the models with minimum score (in the scores.sfc file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
+* In this case:
+  * TM-score of best model without CST ~ 0.38
+  * TM-score of best model with CST ~ 0.6
 
 
