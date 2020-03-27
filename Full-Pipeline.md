@@ -74,3 +74,27 @@ fcst.close()
 ```
 ### Step5. Obtain Rosetta fragment files
 Submit fasta file at http://old.robetta.org/fragmentqueue.jsp.
+
+### Step6. Run Rosetta without any restraints
+```console
+/ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/source/bin/AbinitioRelax.static.linuxgccrelease \
+-database /ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/database/ \
+-in:file:fasta ../e0.001/T0957s2.fasta \
+-in:file:frag3 ./aat000_03_05.200_v1_3 \
+-in:file:frag9 ./aat000_09_05.200_v1_3 \
+-nstruct 10 -out:pdb -abinitio:relax -out:overwrite
+```
+### Step7. Run Rosetta with restraints
+```console
+/ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/source/bin/AbinitioRelax.static.linuxgccrelease \
+-database /ssdA/common-tools/rosetta_bin_linux_2019.35.60890_bundle/main/database/ \
+-in:file:fasta ../e0.001/T0957s2.fasta \
+-in:file:frag3 ./aat000_03_05.200_v1_3 \
+-in:file:frag9 ./aat000_09_05.200_v1_3 \
+-nstruct 10 -out:pdb \
+-constraints:cst_fa_weight 0.5 -constraints:cst_weight 0.5 \
+-cst_fa_file ../constraints.cst \
+-abinitio:relax -out:overwrite
+```
+
+
