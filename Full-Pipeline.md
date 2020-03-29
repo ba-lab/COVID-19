@@ -106,6 +106,17 @@ fcst.close()
 
 ### Step8. Check that the distances in the predicted models match that of the input distance maps
 Full analysis available [here](https://github.com/ba-lab/COVID-19/tree/master/full-pipeline-example/T0957s2_Predicted_distmap_vs_Model's_distmap.ipynb)
+```python
+plt.imshow(PredictedMAP, cmap='Spectral')
+x = plt.colorbar()
+x.set_label('Distance map (output of DL model)')
+plt.title('DL output vs 3D model')
+plt.imshow(cb_map, cmap='RdYlGn')
+y = plt.colorbar()
+y.set_label('Distance obtained from predicted 3D model')
+plt.show()
+```
+![Comparison](./full-pipeline/compare.png)
 
 ### Step9. Evaluate predicted structures using TM-score and RMSD (if native is present)
 * Submit the native structure and the models with minimum score (in the `scores.fsc` file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
