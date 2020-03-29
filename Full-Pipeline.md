@@ -116,7 +116,7 @@ y = plt.colorbar()
 y.set_label('Distance obtained from predicted 3D model')
 plt.show()
 ```
-![Comparison](./full-pipeline/compare.png)
+![Comparison](./full-pipeline-example/compare.png)
 
 ### Step9. Evaluate predicted structures using TM-score and RMSD (if native is present)
 * Submit the native structure and the models with minimum score (in the `scores.fsc` file) to https://zhanglab.ccmb.med.umich.edu/TM-align/.
