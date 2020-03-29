@@ -107,10 +107,12 @@ fcst.close()
 ### Step8. Check that the distances in the predicted models match that of the input distance maps
 Full analysis available [here](https://github.com/ba-lab/COVID-19/tree/master/full-pipeline-example/T0957s2_Predicted_distmap_vs_Model's_distmap.ipynb)
 ```python
+# 'PredictedMAP' is the output of the deep learning model that predicts distance map
 plt.imshow(PredictedMAP, cmap='Spectral')
 x = plt.colorbar()
 x.set_label('Distance map (output of DL model)')
 plt.title('DL output vs 3D model')
+# 'cb_map' is the distance map obtained from the 3D model
 plt.imshow(cb_map, cmap='RdYlGn')
 y = plt.colorbar()
 y.set_label('Distance obtained from predicted 3D model')
