@@ -4,6 +4,6 @@
 
 | Target  | L  | e-value threshold for running DeepMSA  | # of sequences in alignment  | # of Rosetta models built |
 |---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+| C1901 | 638 | 0.001 | 249  | ?  |
+| C1902 |   |   |   |   |
+| C1903 |   |   |   |   |
