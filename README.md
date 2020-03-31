@@ -2,7 +2,11 @@
 (For the 10 COVID-19 related proteins released by CASP Commons)
 <hr>
 
-## Details of our methodology
+## Our structure prediction method
+* Our overall method is demonstrated [here](./Full-Pipeline.md)
+* Full details are yet to be published
+
+## Our method for the COVID-19 protein targets
 | Target  | L  | e-value threshold for running DeepMSA  | # of sequences in alignment  | # of Rosetta models built |
 |---|---|---|---|---|
 | C1901 | 638 | 0.001 | 249  | ?  |
@@ -12,3 +16,14 @@
 ## Distance map predictions vs distance map from the best Rosetta model
 #### C1908
 ![](./distance-maps/C1908.png)
+
+
+# Team
+1. Badri Adhikari (adhikarib@umsl.edu)
+1. Jacob Barger (jsbp67@mail.umsl.edu)
+1. Bikash Shrestha (bsmmy@mail.umsl.edu)
+
+# Contact
+Badri Adhikari
+adhikarib@umsl.edu
+University of Missouri-St. Louis
