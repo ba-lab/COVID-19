@@ -24,6 +24,6 @@
 1. Bikash Shrestha (bsmmy@mail.umsl.edu)
 
 # Contact
-Badri Adhikari
-adhikarib@umsl.edu
-University of Missouri-St. Louis
+Badri Adhikari  
+adhikarib@umsl.edu  
+University of Missouri-St. Louis  
