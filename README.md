@@ -28,10 +28,10 @@ For the 10 COVID-19 related proteins released by CASP Commons
 #### C1903
 ?
 #### C1908
-### Model 1
+##### Model 1
 ![](./distance-maps/C1908_1.png)  
-### Model 2
-![](./distance-maps/C1908_1.png)
+##### Model 2
+![](./distance-maps/C1908_2.png)
 ...
 #### C1910
 ![](./distance-maps/C1910_1.png)
