@@ -7,7 +7,7 @@
 * Full details are yet to be published
 
 ## Our method for the COVID-19 protein targets
-| Target  | L  | # of sequences in alignment (e-value = 0.001) | # of sequences in alignment (e-value = 0.1) | # of Rosetta models built |
+| Target  | L  | Aln. size (e-value = 0.001) | Aln. size (e-value = 0.1) | # of models |
 |---|---|---|---|---|
 | C1901 | 638 | 249  | -  | ? |
 | C1902 | 500  | 499  | - | ? |
