@@ -14,11 +14,11 @@ For the 10 COVID-19 related proteins released by CASP Commons
 | C1903 | 290  | 357  | -  | ? |
 | C1904 | 686  | 166  |  - | ? |
 | C1905 | 275  | 26  |  - | ? |
-| C1906 | 222  | 160  | -  | ? |
+| C1906 | 222  | 160  | -  | 100 |
 | C1907 | 61  |  12 |  - | ? |
-| C1908 | 121  |  12 | 1919  | ? |
+| C1908 | 121  |  12 | 1919  | 420 |
 | C1909 | 38  |  1 | 1  | ? |
-| C1910 | 43  | 4  |  2141 | ? |
+| C1910 | 43  | 4  |  2141 | 410 |
  
 ## Distance map predictions vs distance map from the best Rosetta model
 #### C1901
