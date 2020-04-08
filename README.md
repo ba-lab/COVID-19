@@ -33,11 +33,11 @@ For the 10 COVID-19 related proteins released by CASP Commons
 #### C1904
 ![](./distance-maps/C1904_1.png)
 #### C1905
-![](./distance-maps/C1905_New_map.png)
+<img src="./distance-maps/C1905_New_map.png" width="500" height="800">
 #### C1906
 ![](./distance-maps/C1906_1_distancemap_comp.png)
 #### C1907
-![](./distance-maps/C1907_map.png)
+<img src="./distance-maps/C1907_map.png" width="500" height="800">
 #### C1908
 ##### Model 1
 ![](./distance-maps/C1908_1.png)  
@@ -47,7 +47,7 @@ For the 10 COVID-19 related proteins released by CASP Commons
 ##### Model 1
 ![](./distance-maps/C1909_1_map.png)  
 ##### Model 2
-![](./distance-maps/C1909_2_map.png)
+<img src="./distance-maps/C1909_2_map.png" width="500" height="800">
 ...
 #### C1910
 ![](./distance-maps/C1910_1.png)
