@@ -22,7 +22,7 @@ For the 10 COVID-19 related proteins released by CASP Commons
  
 ## Distance map predictions vs distance map from the best Rosetta model
 #### C1901
-![](./distance-maps/C1901_map.png)
+![](./distance-maps/C1901_map.png=500x250)
 #### C1902
 ![](./distance-maps/C1902_1.png)
 #### C1903
