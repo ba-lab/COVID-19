@@ -9,15 +9,15 @@ For the 10 COVID-19 related proteins released by CASP Commons
 ## Our method for the COVID-19 protein targets
 | Protein (target)  | L  | Aln. size (e-value = 0.001) | Aln. size (e-value = 0.1) | # of models |
 |---|---|---|---|---|
-| C1901 | 638 | 249  | -  | ? |
+| C1901 | 638 | 249  | -  | 25 |
 | C1902 | 500  | 499  | - | 17 |
-| C1903 | 290  | 357  | -  | ? |
+| C1903 | 290  | 357  | -  | 150 |
 | C1904 | 686  | 166  |  - | 12 |
-| C1905 | 275  | 26  |  - | ? |
+| C1905 | 275  | 26  |  - | 200 |
 | C1906 | 222  | 160  | -  | 100 |
-| C1907 | 61  |  12 |  - | ? |
+| C1907 | 61  |  12 |  - |350 |
 | C1908 | 121  |  12 | 1919  | 420 |
-| C1909 | 38  |  1 | 1  | ? |
+| C1909 | 38  |  1 | 1  | 600 |
 | C1910 | 43  | 4  |  2141 | 410 |
  
 ## Distance map predictions vs distance map from the best Rosetta model
